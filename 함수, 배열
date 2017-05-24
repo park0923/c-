@@ -1,0 +1,174 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+//입력된 정수의 다음수와 그 반의 수를 출력 
+
+/*int add1(int x);		//add1 선언 
+double half(int x);		//half 선언 
+
+
+int main(int argc, char** argv) {
+	int num;
+	
+	printf("정수를 하나 입력하시오.:");
+	scanf("%d", &num);
+	
+	printf("\n");
+	printf("%d 의 바로 다음 정수는 %d 고\n", num, add1(num) );
+	printf("%d의 반은 %.lf 입니다\n", num, half(num));
+	printf("\n");
+	printf("제가 맞게 계산했나요?\n");
+	
+	return 0;
+}
+
+int add1(int x){	//입력된 정수의 다음 수를 구하는 함수 
+	return(x+1);
+	}
+	
+double half(int x){		//입력된 정수의 반값을 구하는 함수 
+	return(x/2.0);
+	}*/
+
+//void 일부 
+
+/*int add1(int x);		 
+double half(int x);	
+void print_add_half(int x);
+int main(int argc, char** argv) {
+	int num;
+	
+	printf("정수를 하나 입력하시오.:");
+	scanf("%d", &num);
+	print_add_half;
+	
+	return 0;
+}
+
+void print_add_half(int num){
+
+	printf("\n");
+	printf("%d 의 바로 다음 정수는 %d 고\n", num, add1(num) );
+	printf("%d의 반은 %.lf 입니다\n", num, half(num));
+	printf("\n");
+	printf("제가 맞게 계산했나요?\n");
+}*/
+
+/*int main(int argc, char** argv) {
+	int num;
+	
+	printf("정수를 하나 입력하시오.:");
+	scanf("%d", &num);
+	
+	printf("\n");
+	printf("%d 의 바로 다음 정수는 %d 고\n", num, add1(num) );
+	printf("%d의 반은 %.lf 입니다\n", num, half(num));
+	printf("\n");
+	printf("제가 맞게 계산했나요?\n");
+	
+	return 0;
+}*/
+
+//제어흐름
+
+/*int read_int();
+void print_sing(int n);
+int main(){
+	int num;
+	
+	num= read_int();
+	print_sing(num);
+	
+	return 0;
+}
+int read_int(){
+	int num;
+	
+	printf("정수를 하나 입력하시오.:");
+	scanf("%d", &num);
+	
+	return num;
+}
+void print_sing(int n){
+	printf("정수 %d는 ",n);
+	if(n>0)
+		printf("양수입니다.\n");
+	else if(n<0)
+		printf("음수입니다.\n");
+	else
+		printf("양수도 음수도 아닙니다.\n");
+}*/
+
+//정적 변수 사용
+
+/*int count(){
+	static int n=0;
+	
+	return ++n;
+} 
+
+int main(){
+	int i;
+	
+	for(i=0;i<5;++i)
+		printf("count =%d\n", count());
+		
+	return 0;
+}*/
+
+// 입력받은 정수를 역순으로 출력 
+
+/*int main(){
+	int *p; //통적 할당된 블록을 가리킬 포인터
+	int n, i;
+	
+	printf("몇개의 정수를 입력 받겠습니까?:");
+	scanf("%d", &n);
+	if(n<0){
+		printf("오류: 정수 개수를 잘못 입력하였습니다.\n");
+		printf("프로그램을 종료합니다.\n");
+		
+		return -1; 
+	}
+	
+	p= (int*) malloc(n*sizeof(int));
+	if(p == NULL){
+		printf("오류: 메모리가 부족합니다.\n");
+		printf("프로그램을 종료합니다.\n");
+		
+		return -1; 
+	}
+	
+	printf("%d개의 정수를 입력해주세요.:", n);
+	for(i=0;i<n;++i)
+		scanf("%d",&p[i]);
+	printf("당신이 입력한 정수를 역순으로 출력합니다.\n");
+	for(i=n-1;i>=0;--i)
+		printf(" %d", p[i]);
+	printf("\n");
+	
+	return 0;
+	
+}*/
+
+//배열 인수 전달
+
+/*int sum(int a[10]);
+
+int main(){
+	
+	int x[10] = {1,2,3,4,5,6,7,8,9,10};
+	
+	printf("1+2+.....+9+10= %d\n", sum(x));
+	return 0;
+}
+
+int sum(int a[10]){
+	int sum = 0, i;
+	for(i=0;i<10;++i)
+		sum+= a[i];
+	
+	return sum;
+}*/
