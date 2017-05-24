@@ -1,0 +1,147 @@
+//별그리기
+	/*for(int i=0;i<100/8;i++){
+		cout << "*" << endl;
+		Sleep(1000);
+		cout << "**" << endl;
+		Sleep(1000);
+		cout << "***" << endl;
+		Sleep(1000);
+		cout << "****" << endl;
+		Sleep(1000);
+		cout << "*****" << endl;
+		Sleep(1000);
+		cout << "****" << endl;
+		Sleep(1000);
+		cout << "***" << endl;
+		Sleep(1000);
+		cout << "**" << endl;
+		Sleep(1000);
+	}*/
+	
+	/*for(int i=0;i<100/8;i++){
+		for(int num=1; num<=5; num++){
+			for(int j=1; j<=num; j++)
+			cout << "*";
+		cout << endl;
+		Sleep(1000);
+		}
+		for(int num=4; num<=2; num++){
+			for(int j=1; j<=num; j++)
+			cout << "*";
+		cout << endl;
+		Sleep(1000);
+		}
+	}*/
+	
+	/*int dir = 0;
+	int num = 0;
+	for(int i=0;i<100;i++){
+		if(dir == 0){
+			num++;
+			if(num==5) dir = 1;
+		}
+		else{
+			num--;
+			if(num==1) dir = 0;
+		}
+		for(int j=0;j<num;j++) cout << "*";
+		cout << endl;
+		Sleep(1000);
+	}*/
+	
+	/*int num = 0;
+	for(int i=0;i<100;i++){
+		num = i%4; 
+		if((i/4)&1) num=4-num;
+		for(int j=0;j<=num;j++) cout << '*';
+		cout << endl;
+		Sleep(1000);
+	}*/
+	
+	//개미게임 
+	/*int w,h,x,y,t,p,q;
+	scanf("%d%d%d%d%d%d%d",&w,&h,&x,&y,&t,&p,&q);
+	p+=t; q+=t;
+	x=p%w; y=q%h;
+	if((p/w)&1)x=w=x;
+	if((q/h)&1)y=h-y;
+	printf("%d %d\n",x ,y);
+	*/
+ 
+	//바퀴 분당 회전수, 방향
+	/*int i;
+	int n;
+	int a, b, s;
+	int dr=0;
+	int speed=1;
+	scanf("%d", &n);
+	for(i=0;i<n;i++){
+		scanf("%d %d %d", &a, &b, &s);
+		if(a==1)
+			dr=dr-1;
+		speed=(speed/a)*b;
+	} 
+	printf21
+	5("%d %d", dr, speed);*/
+	
+	//사과 나너주고 나머지 더하기 
+	/*int n;		//학교수
+	int a,b,c,d,e;		//각 학교의 학생수
+	int x,y,z,p,q;		//각 학교의 사과수
+	int sum=0;
+	n=5;
+	printf("각 학교의 학생수를 입력하시오.:");
+	scanf("%d %d %d %d %d", &a,&b,&c,&d,&e);
+	printf("각 학교의 사과수를 입력하시오.:");
+	scanf("%d %d %d %d %d", &x,&y,&z,&p,&q);
+	
+	sum= (x%a)+(y%b)+(z%c)+(p%d)+(q%e);
+	
+	printf("나너주고 남은 사과의 합은 %d 입니다.", sum);
+	*/
+	
+	/*int stu[5], app[5];
+	int num=0;
+	int i;
+	for(int i=0;i<5;i++){
+		printf("%d번째 학교 학생수:", i+1);
+		scanf("%d" ,&stu[i]); 
+	}
+	system("cls");
+	for(i=0;i<5;i++){
+		printf("%d번째 학교의 사과수:", i+1);
+		scanf("%d", &app[i]);
+	}
+	for(i=0;i<5;i++){
+		num+=app[i]%stu[i];
+	}
+	system("cls");
+	printf("남은 사과의수=%d\n", num);
+	*/
+	
+	
+	//숫자 사각형 
+	
+	/*int type;
+	printf("사각형 종류:");
+	scanf("%d", &type);
+	for(int i=0;i<5;i++){
+		for(int j=0;j<5;j++){
+			switch(type){
+				case 1:
+					printf("%d", i*j);
+					break;
+				case 2:
+					if(i%2==1)
+						printf("%d", 5-j);
+					else
+						printf("%d", j*i);
+					break;
+				case 3:
+					printf("%d", (i+1)*(j+1));
+					break;
+				}
+			
+		}
+		printf("\n");	
+	}*/
