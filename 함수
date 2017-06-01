@@ -1,0 +1,95 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+// 팩토리알 함수
+ 
+/*int fact(int n){
+	int i;
+	int result=1;
+	for(i=1;i<=n;i++){
+		result*=i;
+	}
+	return result;
+}*/
+
+int fact(int n) {
+	if (n == 1)
+		return 1;
+	
+	return n * fact(n - 1);
+}
+
+//소수 찾기
+ 
+/*int sosu(int num){
+	int i;
+	for(i=2;i<num;i++){
+		if(num%i==0){
+			return 0;
+			}
+	} return i; 
+}*/
+int main(int argc, char *argv[]) {
+	auto int i;
+	
+	for (i = 0; i < 5; i++) {
+		int temp = 1;
+		printf("%d\n", temp++);
+	}
+	
+	/
+	/*
+	printf("팩토리얼을 계산할 수를 입력하세요: ");
+	scanf("%d", &num);
+	
+	result = fact(num);
+	printf("%d! = %d\n", num, result);
+	
+	//소수 판정
+	 
+	/*int num;
+	int result;
+	printf("소수인지 판단할 숫자를 입력하시오.:");
+	scanf("%d", &num);
+	
+	result = sosu(num);
+	
+	if(result)
+		printf("소수입니다.");
+	else	
+		printf("소수가 아닙니다.");
+	*/
+
+	//숫자 맞추기
+	 
+	/*
+	int num;
+	int answer;
+	int count = 0;
+	
+	srand((unsigned int)time(NULL));
+	answer=rand()%100;
+	printf(" * %d\n", answer);
+	
+	while(num != answer){
+		printf("숫 자를 입력하세요.:");
+		scanf("%d", &num);
+		count++;
+		
+		if(num == answer) {
+			printf("정답입니다.\n");
+			printf("반복한 횟수: %d번\n", count);
+		}
+		else if(num>answer) {
+			printf("입력한 숫자보다 낮습니다.\n");
+		}
+		else if(answer<num) {
+			printf("입력한 숫자보다 높습니다.\n");
+		}
+	} 
+	*/
+	
+	return 0;
+}
