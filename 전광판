@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+//전광판 글자 움직이기
+ 
+int main(int argc, char *argv[]) {
+	char str[50]= "하잇!";
+	int i, j, k;
+	double a;
+	while(1){
+		for(i=0;i<40;i++){
+			printf("%s", str);
+			for(k=1;k<6000000;k++)
+				a= a * 1.1 - 0.1*1.1;
+			for(j=0;j<strlen(str);j++)
+				putchar('\b');		//한글자식 지우기
+			putchar(' ');
+		}
+		for(i=0;i<40;i++){
+			printf("%s", str);
+			for(k=1;k<6000000;k++)
+				a= a * 1.1 - 0.1*1.1;
+			for(j=0;j<strlen(str)+2;j++)
+				putchar('\b');
+			}
+	}
+	return 0;
+}
